@@ -2,10 +2,14 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+let body = document.body;
+body.style.backgroundColor = "green";
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+let divCard = document.querySelector("#card");
+divCard.classList.add("card-background");
+
+let topSymbol = document.createElement("div");
+topSymbol.classList.add("top-symbol");
+topSymbol.setAttribute("id", "topSymbol");
+divCard.appendChild(topSymbol);
+topSymbol.textContent = " ♥ ";
