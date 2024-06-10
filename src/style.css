@@ -13,10 +13,23 @@ body {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
+  padding: 0 20px 0 20px;
 }
 
 .top-symbol {
   font-size: 5rem;
-  margin-left: 15px;
+  margin-right: auto;
+}
+
+.numbers {
+  font-size: 5rem;
+  justify-content: center;
+}
+
+.buttom-symbol {
+  font-size: 5rem;
+  margin-left: auto;
+  transform: rotate(180deg);
 }
