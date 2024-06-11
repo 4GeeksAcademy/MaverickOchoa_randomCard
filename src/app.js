@@ -31,3 +31,11 @@ buttomSymbol.classList.add("buttom-symbol");
 buttomSymbol.setAttribute("id", "buttomSymbol");
 divCard.appendChild(buttomSymbol);
 buttomSymbol.textContent = allSymbols[symbolSelector];
+
+if (allSymbols[symbolSelector] == "♦" || allSymbols[symbolSelector] == "♥") {
+  buttomSymbol.style.color = "red";
+  topSymbol.style.color = "red";
+  number.style.color = "red";
+} else {
+  number.style.color = "black";
+}
